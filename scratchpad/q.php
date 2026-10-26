@@ -1,0 +1,1 @@
+<?php $pdo=new PDO("sqlite:database/testing.sqlite"); foreach($pdo->query("SELECT name FROM sqlite_master WHERE type=""index"" AND tbl_name=""organization_memberships"") as $r){ echo $r["name"].PHP_EOL; }
